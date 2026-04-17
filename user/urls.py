@@ -1,9 +1,10 @@
 from django.urls import path , include
 from rest_framework import routers
-from user.views import UserViewSet
+
 from .views1 import UserView, UserDetailView, UserUpdateView , UserDeleteView , UserCreateView
 from .views2 import user_detail,user_view,user_create,user_update,user_delete
 from .views3 import user_list,user_details , create_user , update_user ,delete_user
+from .views4 import UserViewSet
 
 router = routers.DefaultRouter()
 router.register('user', UserViewSet)
